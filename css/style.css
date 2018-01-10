@@ -1,3 +1,71 @@
-*{
-	
+body {
+	min-height: 100%;
+	padding: 0;
+	position: relative;
+	margin: 0;
+	font-family: "Robot", "Helvetica Neue", sans-serif;
+	font-size: 15px;
+	color: #666;
+}
+footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 200px;
+	border: solid thin grey;
+	background-color: #E5E5E5;
+	text-align: center;
+	color: grey;
+}
+html {
+	height: 100%;
+}
+.Body-content {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 200px;
+
+
+}
+
+@media screen and (min-width: 1024px) {
+	#Top {
+		background: url("../img/banniere.png");
+		background-position: 0px 0px;
+		background-size: 100%;
+		height: 200px;
+		border-bottom: solid 3px green;
+	}
+
+	#Title {
+		position: absolute;
+		letter-spacing: 1px !important;
+		color: black;
+		text-shadow: 0 0 1px green;
+		padding: 5px;
+		padding-left: 70px;
+		padding-right: 20px;
+		font-family: DejaVu Sans, sans-serif;
+		font-weight: 700;
+		font-size: 30px;
+		text-align: left;
+		margin-left: 60px;
+		margin-top: 80px;
+		background-color: rgba(255,240,255,0.8);
+		border-radius: 10px;
+		/*border: solid 2px rgb(250,230,0);*/
+		/*box-shadow: 0 0 2px darkgreen;*/
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#Top {
+		height: 105px;
+	}
+
+	#Title {
+		display: none;
+	}
 }
